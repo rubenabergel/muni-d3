@@ -107,7 +107,7 @@ function drawFreeways(data){
 	svg.selectAll(".freeway-path")
        .data(data.features)
        .enter()
-       .append("svg:path")
+       .append("path")
        .attr("class", "freeway-path")
        .attr("d", path)
        .attr("fill", "none")
