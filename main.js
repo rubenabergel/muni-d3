@@ -68,12 +68,12 @@ function retrieveFreeways(){
 function drawNeighborhoods(data){
 	projection.scale(getBoundsAndScale(data)[1]).translate(getBoundsAndScale(data)[2]);
 
-	svg.selectAll("path")
+	svg.selectAll(".neigh-path")
 		.data(data.features)
 		.enter()
 		.append("path")
 		.attr("d", path)
-		.attr("class", "neighborhoods")
+		.attr("class", "neigh-path")
 		.style("fill", 'gainsboro')
 		.style("stroke", "gray");
 }
@@ -82,7 +82,8 @@ function drawStreets(data){
 	svg.selectAll(".street-path")
        .data(data.features)
        .enter()
-       .append("path")
+       .append("svg:path")
+       .attr("class", "street-path")
        .attr("d", path)
        .attr("fill", "none")
        .attr("stroke", "white")
@@ -94,6 +95,7 @@ function drawArteries(data){
 	   .data(data.features)
 	   .enter()
 	   .append("svg:path")
+	   .attr("class", "arter-path")
 	   .attr("d", path)
 	   .attr("fill", "none")
 	   .attr("stroke", "white")
