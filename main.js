@@ -74,7 +74,7 @@ function drawNeighborhoods(data){
 		.append("path")
 		.attr("d", path)
 		.attr("class", "neighborhoods")
-		.style("fill", '#D2CDBC')
+		.style("fill", 'gainsboro')
 		.style("stroke", "gray");
 }
 
@@ -109,7 +109,7 @@ function drawFreeways(data){
        .attr("class", "freeway-path")
        .attr("d", path)
        .attr("fill", "none")
-       .attr("stroke", '#F29A1A')
+       .attr("stroke", 'orange')
        .attr("stroke-width", 1);
 }
 
