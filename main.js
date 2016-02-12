@@ -104,11 +104,11 @@ function drawArteries(data){
 
 	
 function drawFreeways(data){
-	svg.selectAll(".freeway-path")
+	svg.selectAll(".freeways-path")
        .data(data.features)
        .enter()
-       .append("path")
-       .attr("class", "freeway-path")
+       .append("svg:path")
+       .attr("class", "freeways-path")
        .attr("d", path)
        .attr("fill", "none")
        .attr("stroke", 'orange')
