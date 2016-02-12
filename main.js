@@ -87,7 +87,7 @@ function drawStreets(data){
        .attr("d", path)
        .attr("fill", "none")
        .attr("stroke", "white")
-       .attr("stroke-width", 1);
+       .attr("stroke-width", .3);
 }
 
 function drawArteries(data){
@@ -99,20 +99,20 @@ function drawArteries(data){
 	   .attr("d", path)
 	   .attr("fill", "none")
 	   .attr("stroke", "white")
-	   .attr("stroke-width", 2);
+	   .attr("stroke-width", 1.5);
 }
 
 	
 function drawFreeways(data){
-	svg.selectAll(".freeways-path")
+	svg.selectAll(".freeways")
        .data(data.features)
        .enter()
        .append("svg:path")
-       .attr("class", "freeways-path")
+       .attr("class", "freeways")
        .attr("d", path)
        .attr("fill", "none")
        .attr("stroke", 'orange')
-       .attr("stroke-width", 1);
+       .attr("stroke-width", 2);
 }
 
 
