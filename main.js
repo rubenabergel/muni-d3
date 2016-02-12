@@ -74,7 +74,7 @@ function drawNeighborhoods(data){
 		.append("path")
 		.attr("d", path)
 		.attr("class", "neighborhoods")
-		.style("fill", '#E9E5DC')
+		.style("fill", '#D2CDBC')
 		.style("stroke", "gray");
 }
 

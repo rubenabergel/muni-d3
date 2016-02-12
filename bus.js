@@ -60,8 +60,8 @@ function drawBuses(route){
            .attr("class", 'bus-'+route)
            .attr("cx", function(d){ return projection([d.lon,])[0]; })
            .attr("cy", function(d){ return projection([,d.lat])[1]; })
-           .attr("rx", 5)
-           .attr("ry", 5)
+           .attr("rx", 4)
+           .attr("ry", 4)
            .attr("fill", color );
       } else {
         displayErrorMessage(route);
